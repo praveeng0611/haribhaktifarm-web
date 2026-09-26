@@ -1,0 +1,70 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hari Bhakti Farm">
+  <defs>
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5c842"/>
+      <stop offset="100%" stop-color="#e8944a"/>
+    </radialGradient>
+    <linearGradient id="fieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b8a3a"/>
+      <stop offset="100%" stop-color="#4a6426"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun -->
+  <ellipse cx="185" cy="72" rx="28" ry="28" fill="url(#sunGrad)" opacity="0.92"/>
+
+  <!-- Birds -->
+  <path d="M220 38 Q223 35 226 38" stroke="#2d4a1e" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <path d="M228 32 Q232 28 236 32" stroke="#2d4a1e" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <path d="M238 40 Q241 37 244 40" stroke="#2d4a1e" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+
+  <!-- Farm fields (curved rows) -->
+  <g fill="url(#fieldGrad)" opacity="0.85">
+    <path d="M95 105 Q160 88 240 100 L240 108 Q160 96 95 113 Z"/>
+    <path d="M90 115 Q160 100 242 112 L242 120 Q160 108 90 123 Z"/>
+    <path d="M88 125 Q160 112 243 122 L243 130 Q160 120 88 133 Z"/>
+    <path d="M90 134 Q160 122 242 131 L242 139 Q160 130 90 142 Z"/>
+  </g>
+
+  <!-- Farmhouse -->
+  <g fill="#2d4a1e">
+    <!-- Roof -->
+    <polygon points="173,85 190,74 207,85" fill="#2d4a1e"/>
+    <!-- Walls -->
+    <rect x="176" y="85" width="28" height="18" fill="#3a5c26"/>
+    <!-- Door -->
+    <rect x="187" y="95" width="6" height="8" fill="#2d4a1e"/>
+    <!-- Window -->
+    <rect x="178" y="88" width="5" height="4" fill="#f5c842" opacity="0.7"/>
+    <rect x="197" y="88" width="5" height="4" fill="#f5c842" opacity="0.7"/>
+  </g>
+
+  <!-- Tree -->
+  <rect x="215" y="90" width="4" height="18" fill="#4a3020"/>
+  <ellipse cx="217" cy="83" rx="14" ry="14" fill="#2d4a1e"/>
+  <ellipse cx="213" cy="87" rx="10" ry="10" fill="#3a5c26"/>
+
+  <!-- Large plant / crop leaves on left -->
+  <g fill="#2d4a1e">
+    <!-- Main central leaf -->
+    <path d="M105 110 Q90 70 80 40 Q95 68 115 95 Z" opacity="0.95"/>
+    <!-- Left leaf -->
+    <path d="M102 108 Q70 75 60 50 Q82 72 108 100 Z" opacity="0.9"/>
+    <!-- Right leaf -->
+    <path d="M110 107 Q115 70 118 45 Q114 72 112 102 Z" opacity="0.85"/>
+    <!-- Small lower leaves -->
+    <path d="M100 112 Q72 90 65 75 Q80 92 105 108 Z" opacity="0.75"/>
+    <path d="M108 110 Q130 88 135 72 Q124 90 112 108 Z" opacity="0.75"/>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="80" y1="148" x2="240" y2="148" stroke="#c8973a" stroke-width="1" opacity="0.5"/>
+  <line x1="80" y1="151" x2="240" y2="151" stroke="#c8973a" stroke-width="1" opacity="0.5"/>
+
+  <!-- Brand name -->
+  <text x="160" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#1e3210" text-anchor="middle" letter-spacing="1">Hari Bhakti</text>
+  <text x="160" y="186" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#c8973a" text-anchor="middle" letter-spacing="3">F A R M</text>
+
+  <!-- Small leaf ornament below Farm -->
+  <path d="M156 193 Q160 189 164 193 Q160 191 156 193 Z" fill="#2d4a1e"/>
+</svg>
