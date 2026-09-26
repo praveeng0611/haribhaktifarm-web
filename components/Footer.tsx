@@ -79,13 +79,28 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem',
-                      display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.8rem' }}>
           <p style={{ fontSize: '0.8rem', color: '#6b7c5a' }}>
             © {new Date().getFullYear()} Hari Bhakti Farm. All rights reserved.
           </p>
-          <p style={{ fontSize: '0.8rem', color: '#6b7c5a' }}>
-            Built by <span style={{ color: '#c8973a' }}>Gnosiso Labs</span>
-          </p>
+          <div style={{ display: 'flex', gap: '1.2rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            {[
+              { href: '/terms-conditions', label: 'Terms & Conditions' },
+              { href: '/privacy-policy',   label: 'Privacy Policy'     },
+              { href: '/rules-guidelines', label: 'Rules & Safety'     },
+            ].map(l => (
+              <Link key={l.href} href={l.href}
+                style={{ fontSize: '0.78rem', color: '#6b7c5a', textDecoration: 'none', transition: 'color 0.2s' }}
+                onMouseOver={e => (e.currentTarget.style.color = '#c8973a')}
+                onMouseOut={e  => (e.currentTarget.style.color = '#6b7c5a')}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <span style={{ fontSize: '0.8rem', color: '#6b7c5a' }}>
+              Built by <span style={{ color: '#c8973a' }}>Gnosiso Labs</span>
+            </span>
+          </div>
         </div>
       </div>
     </footer>
