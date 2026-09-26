@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { posts } from '../page'
+import { posts } from '@/lib/blog-data'
 
 type Props = { params: { slug: string } }
 
